@@ -1,0 +1,12 @@
+1. Train
+A train has an **n** number of wagons (integer, received as input). On the next n lines, you will receive the number of people that are going to get on each wagon. Print out the number of passengers in each wagon followed by the total number of passengers on the train.
+
+2. Common Elements
+Create a program that prints out all common elements in two arrays. You have to compare the elements of the second array to the elements of the first.
+
+3. Zig-Zag Arrays
+Create a program that creates 2 arrays. You will be given an integer n. On the next n lines, you will get 2 integers. Form 2 new arrays in a zig-zag pattern as shown below.
+
+4. Array Rotation
+Create a program that receives an array and several rotations that you have to perform. The rotations are done by moving the first element of the array from the front to the back. Print the resulting array.
+
