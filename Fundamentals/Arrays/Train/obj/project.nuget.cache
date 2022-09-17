@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "q9+BEdb1y1JRQV0OO0tSY+659XBGYZgGtcDXLjDTw8GWEd9/AmDu73sLygEySm1OLP6xlO7xHSJXPtI3Swu4BQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\acer\\Desktop\\SoftUni\\Arrays\\Train\\Train.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
