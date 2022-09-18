@@ -70,14 +70,59 @@ Input            |      	Output
 5. Top Integers
 Create a program to find all the top integers in an array. A top integer is an integer that is greater than all the elements to its right.
 
+Input                 | 	Output
+-------------------------------------
+1 4 3 2               |  4 3 2
+-------------------------------------
+14 24 3 19 15 17      |	 24 19 17
+-------------------------------------
+27 19 42 2 13 45 48	  |  48
+
+
 6. Equal Sums
 Create a program that determines if an element exists in an array for which the sum of all elements to its left is equal to the sum of all elements to its right. If there are no elements to the left or right, their sum is considered to be 0. Print the index of the element that satisfies the condition or "no" if there is no such element.
+
+Input	                         |  Output	      |  Comments
+----------------------------------------------------------------------------------------------
+1 2 3 3	                          2               	At a[2] -> left sum = 3, right sum = 3
+                                                   a[0] + a[1] = a[3]
+----------------------------------------------------------------------------------------------                                                                                                      
+1 2	                              no              	At a[0] -> left sum = 0, right sum = 2
+                                                   At a[1] -> left sum = 1, right sum = 0
+----------------------------------------------------------------------------------------------                                                                                                                            No such index exists
+----------------------------------------------------------------------------------------------
+1	                                0	               At a[0] -> left sum = 0, right sum = 0
+----------------------------------------------------------------------------------------------
+1 2 3                            	no	              No such index exists
+----------------------------------------------------------------------------------------------
+10 5 5 99 3 4 2 5 1 1 4	          3	               At a[3] -> left sum = 20, right sum = 20
+                                                   a[0] + a[1] + a[2] = a[4] + a[5] + a[6] + a[7] + a[8] + a[9] + a[10]
 
 7. Max Sequence of Equal Elements
 Create a program that finds the longest sequence of equal elements in an array of integers. If several equal sequences are present in the array, print out the leftmost one.
 
+Input	                   |   Output
+----------------------------------------
+2 1 1 2 3 3 2 2 2 1	     |   2 2 2
+----------------------------------------
+1 1 1 2 3 1 3 3	         |   1 1 1
+----------------------------------------
+4 4 4 4                  |  	4 4 4 4
+----------------------------------------
+0 1 1 5 2 2 6 3 3	       |    1 1
+
+
 8. Magic Sum
 Create a program, which prints all unique pairs in an array of integers whose sum is equal to a given number.
+
+Input	             |     Output
+----------------------------------------
+1 7 6 2 19 23      |     1  7
+8                        6  2
+----------------------------------------
+14 20 60 13 7 19 8 |     14  13
+27                       20  7
+                         19  8
 
 9.	*Kamino Factory
  The clone factory in Kamino got another order to clone troops. But this time you are tasked to find the best DNA sequence to use in the production. 
@@ -94,3 +139,16 @@ Input / Constraints:
 The output should be printed on the console and consists of two lines in the following format:
 "Best DNA sample {bestSequenceIndex} with sum: {bestSequenceSum}."
 "{DNA sequence, joined by space}"
+
+Input	             |   Output	                                   |     Comments
+----------------------------------------------------------------------------------------------------------------------------------
+5                      Best DNA sample 2 with sum: 2.                  We receive 2 sequences with the same length of the 
+1!0!1!1!0              0 1 1 0 0                                       subsequence of ones, but the second is printed 
+0!1!1!0!0                                                              because its subsequence starts at index[1].
+Clone them!
+----------------------------------------------------------------------------------------------------------------------------------
+4                     Best DNA sample 1 with sum: 3.                   We receive 3 sequences. Both 1 and 3 have the same 
+1!1!0!1               1 1 0 1                                          length of the subsequence of ones -> 2, and both 
+1!0!0!1                                                                start from the index[0], but the first is printed, 
+1!1!0!0                                                                because its sum is greater.
+Clone them!
