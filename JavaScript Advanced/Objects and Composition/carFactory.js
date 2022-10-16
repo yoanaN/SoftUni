@@ -18,9 +18,7 @@ function carfactory(data){
                 type:"coupe",
                 color
             }
-        }    
-        
-
+        }      
     }
 
     if(data.power<=90){
@@ -31,7 +29,7 @@ function carfactory(data){
         res.engine=engineEnum["Monster engine"];
     }
 
-   res["carriage"]=carriageEnum[data.carriage](data.color);
+    res["carriage"]=carriageEnum[data.carriage](data.color);
     let size=data.wheelsize%2===0?data.wheelsize-1:data.wheelsize;
     
     res.wheels=new Array(4).fill(size);
